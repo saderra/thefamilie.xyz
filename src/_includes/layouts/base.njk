@@ -4,7 +4,10 @@
    <link rel="stylesheet" href="/assets/css/main.css?v={% version %}" />
 </head>
 
-<body class="font-sans p-20">
+<body class="font-sans">
+
+   {% include "components/header/top.njk" %}
+   {% include "components/global/pride.njk" %}
 
 <section class="bg-neutral-50">
    {% block mainContent %}{% endblock %}
