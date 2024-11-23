@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
    <link rel="stylesheet" href="/assets/css/main.css?v={% version %}" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
 </head>
 
-<body class="font-sans">
+<body class="bg-familie-50">
+      {% include "components/global/pride.njk" %}
 
    {% include "components/header/top.njk" %}
-   {% include "components/global/pride.njk" %}
 
-<section class="bg-neutral-50">
+
+<section class="w-full">
    {% block mainContent %}{% endblock %}
 </section>
 
