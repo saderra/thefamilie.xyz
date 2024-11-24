@@ -1,22 +1,7 @@
 {% extends "layouts/base.njk" %}
 {% block mainContent %}
 
-    <div class="container">
-
-           <article class="py-8 lg:py-12">
-            <div class="prose text-center">
-               <h1 class="text-8xl text-center brand-font text-familie-700">
-                {% if contentTitle %}
-                    {{ contentTitle }}
-                {% else %}
-                    {{ title }}
-                {% endif %}
-                </h1>
-
-
-                {{ content | safe }}
-                </div>
-            </article>
+    {{ content | safe }}
        
 
 {% endblock %}
