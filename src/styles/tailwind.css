@@ -16,7 +16,7 @@ body {
 /****** MAIN NAVIGATION ***/
 
 ul.main-navigation {
-  @apply block  bg-black style-font text-xl text-familie-700 font-normal;
+  @apply block  bg-black style-font text-lg text-familie-700 font-normal;
 }
 
 ul.main-navigation {
