@@ -35,6 +35,9 @@ module.exports = {
 
 			}
 		},
+		backgroundImage: theme => ({
+			'home-mast': "url('/assets/images/familie-home-mast-min.jpg')"
+		}),
 
 
 

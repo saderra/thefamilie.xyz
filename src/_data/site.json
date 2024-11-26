@@ -1,5 +1,9 @@
 {
-    "title": "The Family",
-    "tagline": "A Mental Health Collective",
-    "subtagline": "Serving Clients In 40 States"
+    "title": "The Familie - An LGBTQIA+ Mental Health Collective",
+    "tagline": "An LGBTQIA+ Mental Health Collective",
+    
+    "top": { 
+        "cta": "Serving Clients In 40 US States",
+        "consult": "Schedule Your Free Consultation"
+    }
 }
