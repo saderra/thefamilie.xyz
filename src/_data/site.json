@@ -5,5 +5,10 @@
     "top": { 
         "cta": "Serving Clients In 40 US States",
         "consult": "Schedule Your Free Consultation"
+    },
+
+    "home": { 
+        "introHeading": "You're Welcome Here",
+        "introText": "The Familie exists because you deserve care that truly understands you. Our telehealth services are built to create safe, empowering spaces where your authentic self is celebrated and supported. We offer affirming care for individuals, relationships, and families. You belong here."
     }
 }
