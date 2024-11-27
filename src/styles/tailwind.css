@@ -17,7 +17,7 @@ body {
 /****** MAIN NAVIGATION ***/
 
 ul.main-navigation {
-  @apply style-font text-lg text-familie-700 font-normal;
+  @apply style-font text-xl text-familie-700 font-normal;
 }
 
 ul.main-navigation {
