@@ -13,10 +13,11 @@ body {
   font-style: normal;
 }
 
+
 /****** MAIN NAVIGATION ***/
 
 ul.main-navigation {
-  @apply block  bg-black style-font text-lg text-familie-700 font-normal;
+  @apply style-font text-lg text-familie-700 font-normal;
 }
 
 ul.main-navigation {
@@ -24,7 +25,7 @@ ul.main-navigation {
 }
 
 ul.main-navigation > li {
-  @apply inline-block float-right;
+  @apply inline-block float-left;
 }
 
 ul.main-navigation > li > a {
@@ -50,5 +51,3 @@ ul.main-navigation > li > ul li:hover {
 ul.main-navigation > li > ul > li:last-of-type {
   @apply border-none rounded-b-lg;
 }
-
-
