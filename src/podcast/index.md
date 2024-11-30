@@ -1,7 +1,7 @@
 ---
-title: Podcasts
+title: Podcast
 eleventyNavigation:
-  key: Podcasts
+  key: Podcast
   order: 200
 ---
 
