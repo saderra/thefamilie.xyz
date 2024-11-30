@@ -1,27 +1,32 @@
 
 <div class="bg-{{ mastImage }} bg-cover bg-no-repeat min-h-[550px] md:min-h-[800px] lg:min-h-[950px] border-b border-familie-150 bg-top">
 
+    <header class="bg-familie-400/10">
+    <nav x-data="{ open: false }" role="navigation" aria-label="Main Menu">
+        <div class="border-t border-familie-150">
+            <div class="container">
 
+                <div class="flex justify-between itmes-start md:items-center">
 
-<header class="bg-familie-400/10">
-<nav x-data="{ open: false }" role="navigation" aria-label="Main Menu">
-    <div class="border-t border-familie-150">
-        <div class="container">
+                    <div class="py-6">      
+                        {% include "components/global/logo.njk" %}  
+                    </div>
+                    
+                    {% include "components/header/desktop-links.njk" %}
+                    {% include "components/header/mobile-button.njk" %}
 
-            <div class="flex justify-between itmes-start md:items-center">
-
-                <div class="py-6">      
-                    {% include "components/global/logo.njk" %}  
                 </div>
-                
-                {% include "components/header/desktop-links.njk" %}
-                {% include "components/header/mobile-button.njk" %}
 
             </div>
+        </div>
+    </nav>
+    </header>
 
+    <div class="container pt-24 pl-12 style-font">
+        <div class="w-full md:w-2/5 pr-16">
+            <h2 class="block pb-6 mb-6 border-b border-familie-150 text-5xl tracking-tight text-familie-700">{{ site.home.introHeading }}</h2>
+            <p class="pl-2 font-light text-xl leading-7">{{ site.home.introText }}</p>
         </div>
     </div>
-</nav>
-</header>
 
-    </div>
+</div>

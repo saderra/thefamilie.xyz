@@ -14,7 +14,7 @@ module.exports = {
 				xl: "1280px",
 				"2xl": "1440px"
     },
-  },
+  	},
     extend: {
 		colors: {
 			familie: {
@@ -37,6 +37,9 @@ module.exports = {
 		backgroundImage: theme => ({
 			'home-mast': "url('/assets/images/home-mast-min.jpg')"
 		}),
+		fontSize: {
+			baseplus: '1.1rem'
+		},
 
 
 
