@@ -12,8 +12,19 @@
 
 <body class="bg-familie-50">
    
+      
+      {% include "components/header/off-canvas.njk" %}
       {% include "components/global/pride.njk" %}
-      {% include "components/header.njk" %}
+      {% include "components/header/top.njk" %}
+
+      {% if transparentHeader == true  %} 
+         {% include "components/header/header-mast.njk" %}
+      {% else %}
+         {% include "components/header/header.njk" %}
+      {% endif %}
+
+
+
 
 <section class="w-full">
    {% block mainContent %}{% endblock %}

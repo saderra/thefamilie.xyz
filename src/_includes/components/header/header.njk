@@ -1,0 +1,20 @@
+<header class="bg-familie-400/10">
+<nav x-data="{ open: false }" role="navigation" aria-label="Main Menu">
+    <div class="border-t border-familie-150">
+        <div class="container">
+
+            <div class="flex justify-between itmes-start md:items-center">
+
+                <div class="py-6">      
+                    {% include "components/global/logo.njk" %}  
+                </div>
+                
+                {% include "components/header/desktop-links.njk" %}
+                {% include "components/header/mobile-button.njk" %}
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+</header>
