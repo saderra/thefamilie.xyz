@@ -13,14 +13,10 @@
     <div class="border-t border-familie-150">
         <div class="container">
 
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between itmes-start md:items-center">
 
-                <div class="py-2 md:py-6">
-                    <div class="w-sm">
-                        <a href="/"><img src="/assets/images/thefamilie-logo-dark.svg" alt="The Familie Logo" /></a>
-                    </div>
-                    
-                    <span class="style-font text-xl leading-4 text-familie-700">{{ site.tagline }}</span>
+                <div class="py-6">      
+                    {% include "components/global/logo.njk" %}  
                 </div>
                 
                 {% include "components/header/desktop-links.njk" %}
