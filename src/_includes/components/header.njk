@@ -1,38 +1,35 @@
 {% include "components/header/top.njk" %}
 
-<div class="bg-home-mast bg-cover bg-no-repeat min-h-[550px] md:min-h-[800px] lg:min-h-[950px] border-b border-familie-150 bg-right">
-<header class="bg-familie-400/10">
 
+
+{% if transparentHeader == true  %} 
+    <div class="bg-{{ mastImage }} bg-cover bg-no-repeat min-h-[550px] md:min-h-[800px] lg:min-h-[950px] border-b border-familie-150 bg-top">
+{% endif %}
+
+
+<header class="bg-familie-400/10">
     <div class="border-t border-familie-150">
         <div class="container">
 
-            <div class="flex justify-between h-16">
+            <div class="flex justify-between items-center">
 
-            <div class="flex-shrink-0">
-                {% include "components/global/logo.njk" %}
-            </div>
-            
-            {% include "components/header/desktop-links.njk" %}
-            {% include "components/header/mobile-button.njk" %}
+                <div class="py-2 md:py-6">
+                    <div class="w-sm">
+                        <a href="/"><img src="/assets/images/thefamilie-logo-dark.svg" alt="The Familie Logo" /></a>
+                    </div>
+                    
+                    <span class="style-font text-xl leading-4 text-familie-700">{{ site.tagline }}</span>
+                </div>
+                
+                {% include "components/header/desktop-links.njk" %}
+                {% include "components/header/mobile-button.njk" %}
 
             </div>
 
         </div>
-
-
-
-        
     </div>
-
 </header>
 
-
-        <div class="container">
-                
-                
-            <div class="max-w-lg py-24">
-                <h2 class="style-font text-4xl text-familie-800 pb-4 mb-4 border-b border-familie-200">{{ site.home.introHeading }}</h2>
-                <p class="style-font text-xl leading-8 text-familie-700">{{ site.home.introText }}</p>
-            </div>
-        </div>
-</div>
+{% if transparentHeader == true  %} 
+    </div>
+{% endif %}
