@@ -1,13 +1,13 @@
 
 
 <!-- Mobile Button -->
-<div x-data="{show:false}" class="md:hidden" @offcanvas.window="show = !show">
+<div x-data="{show:false}" class="md:hidden" @offcanvas.window="show = !show"  >
     <div class="fixed inset-0 overflow-hidden z-[99] transform transition ease-in-out duration-500 sm:duration-700 translate-x-full bg-black/80" :class="{ 'translate-x-full': !show, 'translate-x-0': show }">
-        <div aria-labelledby="slide-over-title" role="dialog" aria-modal="true">
+        <div aria-labelledby="slide-over-title" role="dialog" aria-modal="true" >
             <div class="inset-0 overflow-hidden">
                 <!-- Background overlay, show/hide based on slide-over state. -->
                 <div class="absolute inset-0" x-show="show" @click="$dispatch('offcanvas')" aria-hidden="true"></div>
-                <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                <div class="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10 mr-[-15px]">
                     <div class="absolute inset-0" aria-hidden="true"></div>
 
                 <div class="pointer-events-auto w-screen max-w-md">
